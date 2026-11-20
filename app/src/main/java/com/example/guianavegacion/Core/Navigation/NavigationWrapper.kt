@@ -27,7 +27,12 @@ fun NavigationWrapper() {
 
         composable<Detail>{backStackEntry->
             val detail:Detail=backStackEntry.toRoute()
-            DetailScreen(name=detail.name){navController.navigate(Login)}
+            DetailScreen(name=detail.name){
+                navController.navigate(Login){
+                    popUpTo(Login){
+                        inclusive=true
+                    }
+                }}
         }
     }
 }

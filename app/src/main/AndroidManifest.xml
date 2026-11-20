@@ -23,6 +23,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".RegisterProductActivity"
+            android:exported="false"
+            android:label="Registrar Producto"
+            android:theme="@style/Theme.GuiaNavegacion"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".ProductListActivity"
+            android:exported="false"
+            android:label="Lista de Productos"
+            android:theme="@style/Theme.GuiaNavegacion" />
     </application>
 
 </manifest>
